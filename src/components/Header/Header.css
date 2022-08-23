@@ -1,0 +1,45 @@
+.flex-h{
+    display: flex;
+    justify-content: space-between;
+    gap: 25rem;
+    padding: 20px 30px;
+    border: 1px solid white;
+    border-radius: 20px;
+    align-items: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+.left-h{
+    color: white;
+    font-weight: 600;
+    line-height: 2.2rem;
+}
+
+.left-h h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.scores{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem 4rem;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.scores h1{
+    font-size: 4rem;
+    color: hsl(229, 25%, 31%);
+    font-family: 'Barlow Semi Condensed', sans-serif ;
+}
+
+.scores h4{
+    color: hsl(229, 64%, 46%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
