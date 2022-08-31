@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const Modal = () => {
-  return (
-    <div>Modal</div>
-  )
-}
+  const [modal, setmodal] = useState("");
 
-export default Modal
+  const toogle = () => {
+    setmodal(!modal);
+  };
+  return (
+    <div className="modal-container">
+      <button onClick={toogle()}>RULES</button>
+      {modal && (
+        <div>
+          <div className="modal-head">
+            <h2>Rules</h2>
+            <img src="../images/icon-close.svg" alt="" />
+          </div>
+          
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Modal;

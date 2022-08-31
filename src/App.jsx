@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './App.css';
 import Player from './components/Player/Player'
-import Modal from './components/Modal/Modal';
 import Header from './components/Header/Header';
-import Computer from './components/Computer/Computer'
+import Computer from './components/Computer/Computer';
+import Modal from './components/Modal/Modal'
 import { Route, Routes } from 'react-router-dom';
 
 function App() {

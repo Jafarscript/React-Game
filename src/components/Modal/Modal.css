@@ -1,0 +1,5 @@
+.modal{
+    align-self: flex-end;
+    transform: translateY(12rem);
+    background-color: #fff;
+}

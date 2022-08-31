@@ -1,23 +1,26 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
+import { Link } from 'react-router-dom';
+import Triangle from '../images/bg-triangle.svg';
+import './Player.css'
 const Player = ({setchoice}) => {
 
   const selected = (e) => {
     setchoice(e.target.dataset.id);
   }
   return (
-    <div>
+    <div className='play'>
+      <img src={Triangle} alt="" className='tri'/>
+      <div className="links">
+      <Link to='/game' >
+          <div data-id='paper' onClick={selected} className='paper'></div>
+      </Link>
       <Link to='/game'>
-          <p data-id='rock' onClick={selected} src="" >rock</p>
-          <img src="./images/icon-scissors.svg" alt="rock" />
+          <div data-id='rock' onClick={selected} src="" className='rock'></div>
       </Link>
       <Link to='/game' >
-          <p data-id='paper' onClick={selected}>papar</p>
+          <div data-id='scissors' onClick={selected} className='scissors'></div>
       </Link>
-      <Link to='/game' >
-          <p data-id='scissors' onClick={selected}>scissors</p>
-      </Link>
+      </div>
     </div>
   )
 }

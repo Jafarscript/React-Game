@@ -1,0 +1,128 @@
+.game{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.yours{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.computer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.text{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.yours div, .computer div{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+ .new-rock{
+    border: 2rem solid hsl(349, 71%, 52%);
+    background-color: #fff;
+    background-image: url(../images/icon-rock.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 6rem;
+    box-shadow: inset 0px 8px 5px -1px rgba(126, 125, 125, 0.75), 0px 8px hsl(349, 63%, 59% , 0.5);
+}
+
+.new-paper{
+    border: 2rem solid hsl(230, 89%, 62%);
+    background-color: #fff;
+    background-image: url(../images/icon-paper.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 6rem;
+    box-shadow: inset 0px 8px 5px -1px rgba(126, 125, 125, 0.75), 0px 8px rgba(83, 111, 237, 0.5);
+}
+
+
+
+.new-scissors{
+    border: 2rem solid hsl(39, 89%, 49%);
+    background-color: #fff;
+    background-image: url(../images/icon-scissors.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 6rem;
+    box-shadow: inset 0px 8px 5px -1px rgba(126, 125, 125, 0.75), 0px 8px rgba(202, 159, 80, 0.5);
+}
+.new-scissors-winner{
+    box-shadow: inset 0px 8px 5px -1px rgba(126, 125, 125, 0.75), 0px 8px rgba(202, 159, 80, 0.5), 
+    0px 0px 0px 50px rgba(255, 255, 255, 0.04),
+    0px 0px 0px 120px rgba(255, 255, 255, 0.03),
+    0px 0px 0px 200px rgba(255, 255, 255, 0.02)
+    ;
+}
+
+.new-paper-winner{
+    box-shadow: inset 0px 8px 5px -1px rgba(126, 125, 125, 0.75), 0px 8px rgba(83, 111, 237, 0.5), 
+    0px 0px 0px 50px rgba(255, 255, 255, 0.04),
+    0px 0px 0px 120px rgba(255, 255, 255, 0.03),
+    0px 0px 0px 200px rgba(255, 255, 255, 0.02)
+    ;
+}
+
+.new-rock-winner{
+    box-shadow: inset 0px 8px 5px -1px rgba(126, 125, 125, 0.75), 0px 8px hsl(349, 63%, 59% , 0.5), 
+    0px 0px 0px 50px rgba(255, 255, 255, 0.04),
+    0px 0px 0px 120px rgba(255, 255, 255, 0.03),
+    0px 0px 0px 200px rgba(255, 255, 255, 0.02)
+    ;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.result .text{
+    font-size: 3rem;
+}
+
+.again{
+    text-transform: uppercase;
+    padding: 1rem 5rem;
+    background: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+}
+
+.again:hover{
+    color: red;
+}
+
+.count{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.281);
+    margin-top: 20px;
+    font-size: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
