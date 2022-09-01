@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import './App.css';
 import Player from './components/Player/Player'
 import Header from './components/Header/Header';
-import Computer from './components/Computer/Computer';
-import Modal from './components/Modal/Modal'
+import Computer from './components/Computer/Computer'
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         <Route path='/game' element={<Computer score={score} choice={choice} setscore={setscore}/>}>
         </Route>
       </Routes>
-      <Modal />
     </div>
   );
 }
