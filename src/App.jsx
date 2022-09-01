@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import './App.css';
 import Player from './components/Player/Player'
 import Header from './components/Header/Header';
@@ -11,10 +11,14 @@ function App() {
   const [score, setscore] = useState(0)
   const  [openModal, setOpenModal] = useState(false)
 
-  // const toogle = () => {
-  //   setOpenModal(!openModal);
-  // }
-  // console.log(choice);
+  useEffect(() => {
+    setscore(JSON.parse(window.localStorage.getItem('count')));
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem('count', score);
+  }, [score]);
+
   return (
     <div className="App">
       <div>

@@ -52,6 +52,9 @@ const Computer = ({ setscore, score, choice }) => {
     return () => {clearInterval(timer)}
   }, [counter, computer]);
 
+  
+
+
 
   return (
     <div className="game">
