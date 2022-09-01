@@ -43,3 +43,53 @@ h1,h2,h3,h4,h5,h6{
     color: hsl(229, 64%, 46%);
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
+
+@media(max-width: 870px){
+    .flex-h{
+        gap: 15rem;
+    }
+
+    .left-h{
+        line-height: 1.8rem;
+    }
+
+    .left-h h3{
+        font-size: 2.5rem;
+    }
+
+    .scores{
+        padding: 1rem 3rem;
+    }
+
+    .scores h1{
+        font-size: 3.5rem;
+    }
+}
+
+@media(max-width: 550px){
+    .flex-h{
+        padding: 1rem 10px;
+    }
+    .scores{
+        padding: 0.5rem 1.5rem;
+    }
+
+    .scores h1{
+        font-size: 2.5rem;
+    }
+
+    .left-h{
+        line-height: 1.5rem;
+    }
+    .flex-h{
+        gap: 6rem;
+    }
+
+    .left-h h3{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 550px){
+    
+}

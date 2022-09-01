@@ -93,6 +93,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    align-self: flex-end;
 }
 
 .result .text{
@@ -125,4 +126,78 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+}
+@media(max-width: 870px){
+    .game{
+        flex-wrap: wrap;
+    }
+    .yours div, .computer div{
+        width: 150px;
+        height: 150px;
+        border-width: 1.9rem;
+        background-size: 4rem;
+    }
+    .result{
+        order: 3;
+    }
+}
+
+@media(max-width: 550px){
+    .yours{
+        flex-direction: column-reverse;
+    }
+
+    .computer{
+        flex-direction: column-reverse;
+    }
+    .game{
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+    .yours div, .computer div{
+        width: 100px;
+        height: 100px;
+        border-width: 1rem;
+        background-size: 2.5rem;
+    }
+    .result{
+        flex: 1;
+        align-self: flex-end;
+        order: 3;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    .new-scissors-winner{
+        box-shadow: inset 0px 8px 5px -1px rgba(126, 125, 125, 0.75), 0px 8px rgba(202, 159, 80, 0.5), 
+        0px 0px 0px 20px rgba(255, 255, 255, 0.04),
+        0px 0px 0px 40px rgba(255, 255, 255, 0.03),
+        0px 0px 0px 60px rgba(255, 255, 255, 0.02)
+        ;
+    }
+    
+    .new-paper-winner{
+        box-shadow: inset 0px 8px 5px -1px rgba(126, 125, 125, 0.75), 0px 8px rgba(83, 111, 237, 0.5), 
+        0px 0px 0px 20px rgba(255, 255, 255, 0.04),
+        0px 0px 0px 40px rgba(255, 255, 255, 0.03),
+        0px 0px 0px 60px rgba(255, 255, 255, 0.02)
+        ;
+    }
+    
+    .new-rock-winner{
+        box-shadow: inset 0px 8px 5px -1px rgba(126, 125, 125, 0.75), 0px 8px hsl(349, 63%, 59% , 0.5), 
+        0px 0px 0px 20px rgba(255, 255, 255, 0.04),
+        0px 0px 0px 40px rgba(255, 255, 255, 0.03),
+        0px 0px 0px 60px rgba(255, 255, 255, 0.02)
+        ;
+    }
+}
+
+@media(max-width: 400px){
+    .yours div, .computer div{
+        width: 80px;
+        height: 80px;
+        background-size: 2rem;
+        border-width: 0.7rem;
+    }
 }

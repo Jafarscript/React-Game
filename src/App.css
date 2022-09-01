@@ -8,3 +8,8 @@
   padding: 3rem;
 }
 
+@media(max-width: 870px){
+  .App{
+    padding: 1rem 0.5rem;
+  }
+}
