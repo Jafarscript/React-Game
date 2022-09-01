@@ -1,0 +1,51 @@
+.modalHolder{
+    height: 90vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.modal{
+    background-color: #fff;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 2%;
+}
+
+.modalHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalHead h4{
+    color: hsl(229, 25%, 31%);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.modalHead img{
+    height: 20px;
+    cursor: pointer;
+}
+
+@media(max-width: 500px){
+   .modal{
+    padding: 0.5rem;
+   }
+}
+
+@media(max-width: 300px){
+    .modalHead h4{
+        font-size: 1rem;
+    }
+    .rules img{
+        width: 200px;
+        height: 200px;
+    }
+}

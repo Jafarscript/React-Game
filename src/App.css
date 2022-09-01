@@ -6,10 +6,32 @@
   align-items: center;
   flex-direction: column;
   padding: 3rem;
+  gap: 15rem;
+  /* justify-content: space-between; */
 }
-
+.textmain{
+  align-self: flex-end;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #fff;
+  padding: 10px 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+}
 @media(max-width: 870px){
   .App{
     padding: 1rem 0.5rem;
+  }
+  .textmain{
+    align-self: center;
+  }
+}
+
+@media(max-width: 300px){
+  .App{
+    padding: 1rem 0.3rem;
   }
 }

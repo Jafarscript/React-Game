@@ -94,3 +94,17 @@
         width: 180px;
     }
 }
+
+@media(max-width: 300px){
+    .links div{
+        width: 70px;
+        height: 70px;
+        background-size: 1.5rem;
+        border-width: 0.7rem;
+    }
+
+    .tri{
+        height: 150px;
+        width: 150px;
+    }
+}
