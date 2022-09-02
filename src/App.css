@@ -9,8 +9,12 @@
   gap: 15rem;
   /* justify-content: space-between; */
 }
-.textmain{
+.btns{
   align-self: flex-end;
+  display: flex;
+  gap: 1rem;
+}
+.textmain{
   background-color: transparent;
   outline: none;
   border: 1px solid #fff;
@@ -23,13 +27,22 @@
 }
 @media(max-width: 870px){
   .App{
-    padding: 1rem 0.5rem;
+    padding: 2rem 0.8rem;
   }
-  .textmain{
+  .btns{
     align-self: center;
+  }
+
+  .textmain{
+    padding: 0.5rem;
   }
 }
 
+@media(max-width: 550px){
+  .textmain{
+    font-size: 0.7rem;
+  }
+}
 @media(max-width: 300px){
   .App{
     padding: 1rem 0.3rem;

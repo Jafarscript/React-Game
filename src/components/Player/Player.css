@@ -34,10 +34,23 @@
     background-position: center;
     background-repeat: no-repeat;
     transform: translateY(13rem);
+    animation: shift3 10s infinite;
     box-shadow: inset 0px 8px 5px -1px rgba(126, 125, 125, 0.75), 0px 8px hsl(349, 63%, 59% , 0.5);
 }
 .rock{
     border-color: hsl(349, 70%, 56%);
+}
+
+@keyframes shift3{
+    0%{
+    transform: translateY(13rem);
+    }
+    50%{
+        transform: translate(-174px, 1px);
+    }
+    75%{
+        transform: translateX(175px);
+    }
 }
 
 .paper{
@@ -47,9 +60,22 @@
     background-position: center;
     background-repeat: no-repeat;
     transform: translateX(1.5rem);
+    animation: shift1 10s infinite;
     box-shadow: inset 0px 8px 5px -1px rgba(126, 125, 125, 0.75), 0px 8px rgba(83, 111, 237, 0.5);
 }
 
+@keyframes shift1{
+    0%{
+    transform: translateX(1.5rem);
+    }
+    50%{
+        transform: translate(23rem);
+    }
+    75%{
+        transform: translate(12.5rem, 13rem);
+    }
+   
+}
 .paper:hover{
     border-color: hsl(230, 89%, 65%);
 }
@@ -61,9 +87,22 @@
     background-position: center;
     background-repeat: no-repeat;
     transform: translateX(-1.5rem);
+    animation: shift2 10s infinite;
     box-shadow: inset 0px 8px 5px -1px rgba(126, 125, 125, 0.75), 0px 8px rgba(202, 159, 80, 0.5);
 }
-
+@keyframes shift2{
+    0%{
+    transform: translateX(-1.5rem);
+    }
+    50%{
+        transform: translate(-12.5rem, 13rem);
+        
+    }
+    75%{
+        transform: translate(-23rem);
+    }
+    
+}
 .scissors:hover{
     border-color: hsl(40, 84%, 53%);
 }
@@ -79,6 +118,45 @@
         height: 200px;
         width: 200px;
     }
+
+    @keyframes shift3{
+        0%{
+        transform: translateY(13rem);
+        }
+        50%{
+            transform: translate(-100px, 1px);
+        }
+        75%{
+            transform: translateX(6rem);
+        }
+    }
+
+    @keyframes shift1{
+        0%{
+        transform: translateX(1.5rem);
+        }
+        50%{
+            transform: translate(15rem);
+        }
+        75%{
+            transform: translate(8.5rem, 13rem);
+        }
+       
+    }
+
+    @keyframes shift2{
+        0%{
+        transform: translateX(-1.5rem);
+        }
+        50%{
+            transform: translate(-8.5rem, 13rem);
+            
+        }
+        75%{
+            transform: translate(-15rem);
+        }
+        
+    }
 }
 
 @media(max-width: 400px){
@@ -93,6 +171,45 @@
         height: 180px;
         width: 180px;
     }
+
+    @keyframes shift3{
+        0%{
+        transform: translateY(13rem);
+        }
+        50%{
+            transform: translate(-100px, 1px);
+        }
+        75%{
+            transform: translateX(6rem);
+        }
+    }
+
+    @keyframes shift1{
+        0%{
+        transform: translateX(1.5rem);
+        }
+        50%{
+            transform: translate(12rem);
+        }
+        75%{
+            transform: translate(6.5rem, 13rem);
+        }
+       
+    }
+
+    @keyframes shift2{
+        0%{
+        transform: translateX(-1.5rem);
+        }
+        50%{
+            transform: translate(-6.5rem, 13rem);
+            
+        }
+        75%{
+            transform: translate(-12rem);
+        }
+        
+    }
 }
 
 @media(max-width: 300px){
@@ -106,5 +223,48 @@
     .tri{
         height: 150px;
         width: 150px;
+    }
+
+    .rock{
+        transform: translateY(11rem);
+    }
+
+    @keyframes shift3{
+        0%{
+        transform: translateY(11rem);
+        }
+        50%{
+            transform: translate(-85px, -1px);
+        }
+        75%{
+            transform: translateX(4.5rem);
+        }
+    }
+
+    @keyframes shift1{
+        0%{
+        transform: translateX(1.5rem);
+        }
+        50%{
+            transform: translate(11rem);
+        }
+        75%{
+            transform: translate(5.7rem, 11rem);
+        }
+       
+    }
+
+    @keyframes shift2{
+        0%{
+        transform: translateX(-1.5rem);
+        }
+        50%{
+            transform: translate(-5.7rem, 11rem);
+            
+        }
+        75%{
+            transform: translate(-10rem);
+        }
+        
     }
 }

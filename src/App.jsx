@@ -14,7 +14,6 @@ function App() {
   useEffect(() => {
     setscore(JSON.parse(window.localStorage.getItem('count')));
   }, []);
-
   useEffect(() => {
     window.localStorage.setItem('count', score);
   }, [score]);
@@ -32,7 +31,10 @@ function App() {
       </Routes>
       </div>
       {openModal && <Modal setOpenModal={setOpenModal} openModal={openModal}/>}
+      <div className="btns">
       <button className='textmain' onClick={() => setOpenModal(!openModal)}>Rules</button>
+      <button className='textmain reset' onClick={() => setscore(0)}>Reset</button>
+      </div>
       
     </div>
   );
