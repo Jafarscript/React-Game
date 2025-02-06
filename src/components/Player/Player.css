@@ -41,7 +41,7 @@
     border-color: hsl(349, 70%, 56%);
 }
 
-@keyframes shift3{
+/* @keyframes shift3{
     0%{
     transform: translateY(13rem);
     }
@@ -51,7 +51,7 @@
     75%{
         transform: translateX(175px);
     }
-}
+} */
 
 .paper{
     border: 1.5rem solid hsl(230, 89%, 62%);
@@ -64,7 +64,7 @@
     box-shadow: inset 0px 8px 5px -1px rgba(126, 125, 125, 0.75), 0px 8px rgba(83, 111, 237, 0.5);
 }
 
-@keyframes shift1{
+/* @keyframes shift1{
     0%{
     transform: translateX(1.5rem);
     }
@@ -75,7 +75,8 @@
         transform: translate(12.5rem, 13rem);
     }
    
-}
+} */
+
 .paper:hover{
     border-color: hsl(230, 89%, 65%);
 }
@@ -90,7 +91,8 @@
     animation: shift2 10s infinite;
     box-shadow: inset 0px 8px 5px -1px rgba(126, 125, 125, 0.75), 0px 8px rgba(202, 159, 80, 0.5);
 }
-@keyframes shift2{
+
+/* @keyframes shift2{
     0%{
     transform: translateX(-1.5rem);
     }
@@ -102,7 +104,8 @@
         transform: translate(-23rem);
     }
     
-}
+} */
+
 .scissors:hover{
     border-color: hsl(40, 84%, 53%);
 }

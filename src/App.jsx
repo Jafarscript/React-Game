@@ -12,7 +12,10 @@ function App() {
   const  [openModal, setOpenModal] = useState(false)
 
   useEffect(() => {
-    setscore(JSON.parse(window.localStorage.getItem('count')));
+    const count = window.localStorage.getItem('count');
+    if(count) {
+      setscore(Number(count));
+    }
   }, []);
   useEffect(() => {
     window.localStorage.setItem('count', score);
